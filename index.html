@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HabitFlow — трекинг привычек</title>
+  <link rel="icon" href="assets/icons/icon.ico">
+
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти к содержимому</a>
+
+  <!-- Header -->
+  <nav class="navbar is-fixed-top is-white" role="navigation" aria-label="Главная навигация">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="#home">HabitFlow</a>
+
+        <a role="button"
+           class="navbar-burger"
+           aria-label="menu"
+           aria-expanded="false"
+           data-target="mainNavbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="mainNavbar" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about">О проекте</a>
+          <a class="navbar-item" href="#features">Возможности</a>
+          <a class="navbar-item" href="#reviews">Отзывы</a>
+          <a class="navbar-item" href="#cta">Начать</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section id="home" class="hero hero-soft is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered is-variable is-6">
+            <div class="column is-6">
+              <h1 class="title is-1 is-size-2-mobile">Отслеживайте прогресс своих привычек</h1>
+              <p class="subtitle muted">
+                HabitFlow помогает закреплять полезные ритуалы: напоминания, серии, статистика и мягкая мотивация без стресса.
+              </p>
+              <div class="buttons">
+                <a href="#cta" class="button is-dark is-medium">Начать трекинг</a>
+                <a href="#features" class="button is-light is-medium">О проекте</a>
+              </div>
+            </div>
+            <div class="column is-6 has-text-centered">
+              <img
+                src="/assets/img/icon.png"
+                alt="Интерфейс приложения HabitFlow"
+                style="border-radius: 14px; border: 1px solid #e9edf3;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="columns is-vcentered is-variable is-6">
+          <div class="column is-5">
+            <img
+              src="assets/img/TrackingScreen.png"
+              alt="Экран отслеживания привычек"
+              style="border-radius: 14px; border: 1px solid #e9edf3;"
+            />
+          </div>
+          <div class="column is-7">
+            <h2 class="title is-3">О проекте</h2>
+            <p class="muted">
+              HabitFlow — это минималистичное приложение для трекинга привычек:
+              отмечайте выполнение за день, следите за сериями и прогрессом по неделям.
+              Отслеживайте выполнение привычек с помощью визуальных отчетов, настроек целей и напоминаний.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="title is-3">Возможности</h2>
+        <p class="subtitle muted">Всё, что нужно для стабильного роста привычек</p>
+
+        <div class="columns is-multiline">
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card feature-card">
+              <div class="card-content">
+                <p class="title is-5">
+                  <span class="feature-icon"><i class="fa-regular fa-bell"></i></span>
+                  Напоминания
+                </p>
+                <p class="muted">Гибкие уведомления утром, днём и вечером.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card feature-card">
+              <div class="card-content">
+                <p class="title is-5">
+                  <span class="feature-icon"><i class="fa-solid fa-fire"></i></span>
+                  Серии (Streaks)
+                </p>
+                <p class="muted">Сохраняйте цепочку дней и не теряйте темп.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card feature-card">
+              <div class="card-content">
+                <p class="title is-5">
+                  <span class="feature-icon"><i class="fa-solid fa-chart-line"></i></span>
+                  Статистика
+                </p>
+                <p class="muted">Недели, месяцы, процент выполнения и тренды.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card feature-card">
+              <div class="card-content">
+                <p class="title is-5">
+                  <span class="feature-icon"><i class="fa-solid fa-sliders"></i></span>
+                  Гибкие цели
+                </p>
+                <p class="muted">Настраивайте частоту: ежедневно, 3 раза в неделю и т.д.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card feature-card">
+              <div class="card-content">
+                <p class="title is-5">
+                  <span class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                  Виджеты
+                </p>
+                <p class="muted">Быстрые отметки привычек прямо с главного экрана.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card feature-card">
+              <div class="card-content">
+                <p class="title is-5">
+                  <span class="feature-icon"><i class="fa-solid fa-leaf"></i></span>
+                  Режим фокуса
+                </p>
+                <p class="muted">Спокойный интерфейс без визуального шума.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2 class="title is-3">Отзывы</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <p>«Начал с 1 привычки, через месяц уже 5 — и всё без перегруза»</p>
+              <p class="is-size-7 muted mt-2">— Илья, студент</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <p>«Очень нравится, что всё просто и не отвлекает от цели»</p>
+              <p class="is-size-7 muted mt-2">— Алина, дизайнер</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <p>«Серии мотивируют реально не пропускать дни»</p>
+              <p class="is-size-7 muted mt-2">— Максим, разработчик</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="section">
+      <div class="container">
+        <div class="cta-box p-6 has-text-centered">
+          <h2 class="title is-3">Готовы прокачать привычки?</h2>
+          <p class="subtitle muted">Присоединяйтесь к HabitFlow и начните отслеживать прогресс уже сегодня.</p>
+          <a href="#" class="button is-dark is-medium">Начать трекинг</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="has-text-weight-semibold">HabitFlow</p>
+      <p class="is-size-7 muted">Email: hello@habitflow.app • Telegram: @habitflow</p>
+      <p class="is-size-5">
+        <a href="#" aria-label="Telegram" class="mr-2"><i class="fab fa-telegram"></i></a>
+        <a href="#" aria-label="VK" class="mr-2"><i class="fab fa-vk"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </p>
+      <p class="is-size-7 muted">© 2026 HabitFlow. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Мобильное меню (burger)
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      burgers.forEach((burger) => {
+        burger.addEventListener('click', () => {
+          const target = burger.dataset.target;
+          const menu = document.getElementById(target);
+          burger.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+          burger.setAttribute('aria-expanded', burger.classList.contains('is-active') ? 'true' : 'false');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
