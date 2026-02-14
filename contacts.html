@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | HabitFlow</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="full-height">
+  <header class="navbar is-fixed-top is-white">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item has-text-weight-bold" href="index.html">HabitFlow</a>
+        </div>
+        <div id="mainNavbar" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="index.html">Главная</a>
+                <a class="navbar-item" href="faq.html">FAQ</a>
+                <a class="navbar-item" href="#cta">Начать</a>
+            </div>
+        </div>
+    </div>
+  </header>
+  <main id="contactsmain">
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Контакты</h1>
+        <p>Телефон: +7 (999) 123-45-67</p>
+        <p>Email: hello@habitflow.app</p>
+        <form>
+          <div class="field">
+            <label class="label">Имя</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Ваше имя">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="example@email.com">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Тема</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Предложение</option>
+                  <option>Жалоба</option>
+                  <option>Вопрос</option>
+                  <option>Благодарность</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Сообщение</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Ваше сообщение..."></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" required> Соглашаюсь на обработку данных
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary" type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="has-text-weight-semibold">HabitFlow</p>
+      <p class="is-size-7 muted">Email: hello@habitflow.app • Telegram: @habitflow</p>
+      <p class="is-size-5">
+        <a href="#" aria-label="Telegram" class="mr-2"><i class="fab fa-telegram"></i></a>
+        <a href="#" aria-label="VK" class="mr-2"><i class="fab fa-vk"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </p>
+      <p class="is-size-7 muted">© 2026 HabitFlow. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script>
+  // Мобильное меню (burger)
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      burgers.forEach((burger) => {
+        burger.addEventListener('click', () => {
+          const target = burger.dataset.target;
+          const menu = document.getElementById(target);
+          burger.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+          burger.setAttribute('aria-expanded', burger.classList.contains('is-active') ? 'true' : 'false');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

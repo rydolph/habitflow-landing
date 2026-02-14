@@ -1,9 +1,8 @@
-/* Подключаем Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
   --primary-color: #4a90e2;
-  --secondary-color: #111827;  /* Сделаем шрифт темнее */
+  --secondary-color: #111827;
   --background-color: #ffffff;
   --highlight-color: #333333;
   --button-hover: #357abd;
@@ -133,18 +132,17 @@ footer a:hover {
   color: var(--button-hover);
 }
 
-/* Custom styles for feature cards and improvements */
 .feature-card {
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   border: 1px solid #e9edf3;
   transition: all 0.3s ease-in-out;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .feature-card .card-content {
@@ -152,13 +150,13 @@ footer a:hover {
 }
 
 .feature-card .title.is-5 {
-  color: #495057;  /* More neutral text color */
+  color: #495057; 
   font-weight: 600;
 }
 
 .feature-icon {
   margin-right: 10px;
-  color: #007bff; /* Consistent icon color */
+  color: #007bff;
 }
 
 .card-content p {
@@ -176,18 +174,17 @@ footer a:hover {
   border-top: 1px solid #e9edf3;
 }
 
-/* Ensuring feature cards have white background and no dark elements */
 .feature-card {
-  background-color: #e6f0fc !important; /* Ensure background is white */
+  background-color: #e6f0fc !important;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   border: 1px solid #e9edf3;
   transition: all 0.3s ease-in-out;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .feature-card .card-content {
@@ -214,11 +211,10 @@ footer a:hover {
   color: #6c757d;
 }
 
-/* Ensuring review boxes have white background and no dark elements */
 .box {
-  background-color: #e6f0fc !important; /* Ensure background is white */
+  background-color: #e6f0fc !important; 
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   border: 1px solid #e9edf3;
   padding: 20px;
   transition: all 0.3s ease-in-out;
@@ -226,7 +222,7 @@ footer a:hover {
 
 .box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .box p {
@@ -239,11 +235,136 @@ footer a:hover {
 }
 
 /* Update color for specific headings */
-#home .title,    /* "Отслеживайте прогресс своих привычек" */
-#about .title,   /* "О проекте" */
-#features .title,/* "Возможности" */
-#reviews .title, /* "Отзывы" */
+#home .title,    
+#about .title,  
+#features .title,
+#reviews .title, 
 #cta .title,
-#about .muted {    /* "Готовы прокачать привычки?" */
-  color: #007bff !important;  /* Bright blue color for headings */
+#main .title,
+#about .muted {    
+  color: #007bff !important;  
+}
+ 
+#contactsmain .title {
+  color: #007bff !important;  
+}
+
+#contactsmain .label {
+    color: #007bff !important;  
+    font-size: 1.1rem !important; 
+    font-weight: 600 !important;  
+}
+
+#contactsmain .input, 
+#contactsmain .textarea {
+    background-color: #ffffff !important;
+    border: 1px solid #007bff !important; 
+    color: #333 !important;
+    transition: border-color 0.3s ease; 
+}
+
+#contactsmain select{
+  background-color: #ffffff !important; 
+  border: 1px solid #007bff !important; 
+  color: #333 !important;  
+  transition: border-color 0.3s ease;
+}
+
+
+#contactsmain .input:focus, 
+#contactsmain .textarea:focus {
+    border-color: #4a90e2 !important; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5) !important;
+    outline: none;
+}
+
+#contactsmain .input::placeholder, 
+#contactsmain .textarea::placeholder {
+    color: #7a7a7a !important;
+}
+
+#contactsmain .button.is-primary {
+    background-color: #4a90e2 !important;
+    border-color: #4a90e2 !important;
+    color: white !important; 
+}
+
+#contactsmain .button.is-primary:hover {
+    background-color: #357abd !important; 
+}
+
+#contactsmain .checkbox input[type="checkbox"] {
+    border-color: #007bff !important; 
+}
+
+footer {
+    background-color: #111827 !important; 
+    color: white !important; 
+}
+
+footer a {
+    color: #4a90e2 !important;  
+}
+
+footer a:hover {
+    color: #357abd !important; 
+}
+
+#contactsmain .button.is-primary {
+  background-color: #4a90e2 !important;
+  border-color: #4a90e2 !important;
+}
+
+#contactsmain .button.is-primary:hover {
+  background-color: #357abd !important; 
+}
+
+/* 404 */
+#main404 .title {
+  color: #007bff !important;
+  font-size: 40rem !important;
+}
+
+
+#main404 .subtitle {
+  color: #007bff !important; 
+}
+
+
+#main404 .button.is-primary {
+  background-color: #4a90e2 !important; 
+  border-color: #4a90e2 !important; 
+}
+
+#main404 .button.is-primary:hover {
+  background-color: #357abd !important; 
+}
+
+.full-height {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+
+.full-height main {
+    flex-grow: 1;
+    padding: 2rem; 
+}
+
+.full-height footer {
+    margin-top: auto;
+    background-color: #111827; 
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+#offen_questions {
+  color: #4a90e2 !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 2rem;
 }
